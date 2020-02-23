@@ -1,6 +1,6 @@
 from django.urls import path
-#from . import views
-#from django.conf.urls import url
+from . import views
+from django.conf.urls import url
 from .views import about, age_table, index, information, login, population, privacy, region, register
 
 urlpatterns = [
