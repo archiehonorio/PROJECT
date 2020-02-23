@@ -83,7 +83,11 @@ div {
 
 .imgLogo {
     list-style: none;
-    border: 1px solid black;
+    border: 4px solid #888888;
+    border-radius: 8px;
+    margin: 10px 50px 20px;
+    box-shadow: 2px 2px 2px #888888;
+    background-color: white;
 }
 
 #footer1 {
@@ -146,4 +150,22 @@ div {
     display: block;
     margin: auto;
     padding-top: 12px;
+}
+
+.container{
+    background-color: white;
+    border: 1px solid #d2d2cf;
+    border-radius: 8px;
+    margin: 10px auto 20px;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.form{
+    background-color: #fef673;
+}
+
+#text{
+    position: absolute;
+    left: 200px;
+    top:50px;
 }

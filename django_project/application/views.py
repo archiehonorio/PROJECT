@@ -2,20 +2,20 @@ from django.shortcuts import render
 # Create your views here.
 
 def login(request):
-    return render(request,'login.html')
+    return render(request, 'pages/login.html')
 def register(request):
-    return render(request,'register.html')
+    return render(request, 'pages/register.html')
 def privacy(request):
-    return render(request,'privacy.html')
+    return render(request, 'pages/privacy.html')
 def index(request):
-    return render(request,'index.html')
+    return render(request, 'pages/index.html')
 def about(request):
-    return render(request,'about.html')
+    return render(request, 'pages/about.html')
 def region(request):
-    return render(request,'region.html')
+    return render(request, 'pages/region.html')
 def population(request):
-    return render(request,'population.html')
+    return render(request, 'pages/population.html')
 def age_table(request):
-    return render(request, 'age_table.html')
+    return render(request, 'pages/age_table.html')
 def information(request):
-    return render(request, 'information.html')
+    return render(request, 'pages/information.html')

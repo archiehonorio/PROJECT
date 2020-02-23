@@ -3,20 +3,21 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+background-image: url('https://cdn.smartrecruiters.com/blog/wp-content/uploads/2015/11/People-city.jpg');
 background-size: cover;
-background-repeat: no-repeat;
+background-repeat: repeat;
 height: 100%;
 font-family: 'Numans', sans-serif;
 }
 
 .container{
-padding-right: 50px;
+padding-right:  0px;
 height: 100%;
 align-content: center;
 }
 
 .card{
+margin-top: 200px;
 height: 370px;
 width: 400px;
 background-color: rgba(0,0,0,0.5) !important;
