@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Ensus|Home</title>
-        <link href="layout.css" rel="stylesheet" type="text/css"/>
-        <link href="style.css" rel="stylesheet" type="text/css"/>
-        <script src="javascript.js" type="text/javascript"></script>
+        <link href="{% static 'layout.css' %}" rel="stylesheet" type="text/css"/>
+        <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css"/>
+        <script src="{% static 'javascript.js' %}" type="text/javascript"></script>
     </head>
     <body>
         <div id="wrapper">
@@ -14,21 +15,21 @@
             <div id="menuBar">
                 <div id="nav">
                     <ul id="menu">
-                        <li><a class="selected" href="index.html">Home</a></li>
+                        <li><a class="active" href="index/">Home</a></li>
                         <li>
                             <a onmouseover="mopen('m1')" onmouseout="mclosetime()">Tables</a>
                             <div id="m1" style="visibility: hidden;" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
-                                <a href="age_table.html">Ages</a>
-                                <a href="region.html">Region</a>
-                                <a href="population.html">Population</a>
+                                <a href="age_table/">Ages</a>
+                                <a href="region">Region</a>
+                                <a href="population/">Population</a>
                             </div>
                         </li>
-                        <li><a href="about.html">About us</a></li>
+                        <li><a href="{% static 'about.html' %}">About us</a></li>
                         <li>
                             <a onmouseover="mopen('m2')" onmouseout="mclosetime()">Account</a>
                             <div id="m2" style="visibility: hidden;" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" style="visibility:hidden;">
-                                <a href="information.html">Information</a>
-                                <a href="login.html">Logout</a>
+                                <a href="{% static 'information.html' %}">Information</a>
+                                <a href="{% static 'login.html' %}">Logout</a>
                             </div>
                         </li>
                     </ul>
@@ -39,7 +40,7 @@
 						<ul class="imgLogo">
                             <li>
                                 <div class="container">
-                                    <img src="Pics/R1.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/R1.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">Region 1</div>
                                     </div>
@@ -47,7 +48,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/CAR.jpg" alt="RCAR" class="image">
+                                    <img src="{% static 'Pics/CAR.jpg' %}" alt="RCAR" class="image">
                                     <div class="overlay">
                                         <div class="text">CAR</div>
                                     </div>
@@ -55,7 +56,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/R2.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/R2.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">Region 2</div>
                                     </div>
@@ -63,7 +64,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/R3.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/R3.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">Region 3</div>
                                     </div>
@@ -71,7 +72,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/NCR.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/NCR.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">NCR</div>
                                     </div>
@@ -79,7 +80,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/CALABARZON.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/CALABARZON.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">CALABARZON</div>
                                     </div>
@@ -87,7 +88,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/MIMAROPA.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/MIMAROPA.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">MIMAROPA</div>
                                     </div>
@@ -95,7 +96,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/Bicol%20REgion.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/Bicol%20REgion.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">Region 5</div>
                                     </div>
@@ -103,7 +104,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/Western%20Visayas.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/Western%20Visayas.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">Region 6</div>
                                     </div>
@@ -111,7 +112,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/Central%20Visayas.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/Central%20Visayas.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">Region 7</div>
                                     </div>
@@ -119,7 +120,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/Eastern%20Visayas.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/Eastern%20Visayas.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">Region 8</div>
                                     </div>
@@ -127,7 +128,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/Western%20Mindanao.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/Western%20Mindanao.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">Region 9</div>
                                     </div>
@@ -135,7 +136,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/Northern%20Mindanao.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/Northern%20Mindanao.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">Region 10</div>
                                     </div>
@@ -143,7 +144,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/Southern%20Mindanao.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/Southern%20Mindanao.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">Region 11</div>
                                     </div>
@@ -151,7 +152,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/Central%20Mindanao.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/Central%20Mindanao.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">Region 12</div>
                                     </div>
@@ -159,7 +160,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/CAraga%20Region.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/CAraga%20Region.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">Region 13</div>
                                     </div>
@@ -167,7 +168,7 @@
                             </li>
                             <li>
                                 <div class="container">
-                                    <img src="Pics/ARMM.jpg" alt="Region1" class="image">
+                                    <img src="{% static 'Pics/ARMM.jpg' %}" alt="Region1" class="image">
                                     <div class="overlay">
                                         <div class="text">ARMM</div>
                                     </div>
@@ -184,7 +185,7 @@
 								<h4>Navigation</h4>
 							</th>
 							<tr>
-								<td><a href="index.php">Home</a></td>
+								<td><a href="{% static 'index.php' %}">Home</a></td>
 								<td><a href="blogs.php">Blogs</a></td>
 								<td><a href="company.php">About</a></td>
 							</tr>
